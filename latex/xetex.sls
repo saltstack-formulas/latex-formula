@@ -3,4 +3,4 @@
 xetex:
   pkg:
     - installed
-    - name: {{ latex.xetex }}
+    - pkgs: {{ latex.xetex }}
