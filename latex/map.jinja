@@ -1,9 +1,11 @@
 {% set latex = salt['grains.filter_by']({
     'Debian': {
         'pkgs': ['texlive-latex-recommended', 'texlive-latex-extra'],
+        'xetex': ['texlive-xetex'],
         'beamer': 'latex-beamer',
     },
     'RedHat': {
         'pkgs': ['texlive-latex'],
+        'xetex': ['texlive-xetex'],
     },
 }, merge=salt['pillar.get']('latex:lookup')) %}
