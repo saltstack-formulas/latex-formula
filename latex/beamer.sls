@@ -1,6 +1,5 @@
 {% from "latex/map.jinja" import latex with context %}
 
 beamer:
-  pkg:
-    - installed
+  pkg.installed:
     - name: {{ latex.beamer }}
